@@ -1,0 +1,60 @@
+
+{% extends 'product/base.html' %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+      <div class="container">
+        <div class="row">
+           
+            <div class="col-md-12 ">
+
+               
+                <li class="user-logout" style="padding-top:180px; color: #fff; text-decoration: none; list-style: none; float:right">
+                    <a class="nav-li" href="" style="padding-top:180px; color: #fff; text-decoration: none; list-style: none; font-size: 17px; font-style: italic;  margin-right: 20px;">Logout</a>
+                  </li>
+                <li class="user-logout" style="padding-top:180px; color: #fff; text-decoration: none; list-style: none; float:right; margin-right: 20px;" >
+                    <a class="nav-li" href="" style="padding-top:180px; color: #fff; text-decoration: none; list-style: none; font-size: 17px; font-style: italic;">Hello, {{request.user}} <Span>&#9995;</Span></a>
+                  </li>
+                 
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+      
+<div class="mb-3">
+<label for="exampleFormControlInput1" class="form-label">Name</label>
+<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" Required name="name">
+</div>
+<div class="mb-3">
+<label for="exampleFormControlInput1" class="form-label">Price</label>
+<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Price" Required name="price">
+</div>
+<div class="mb-3">
+<label for="exampleFormControlTextarea1" class="form-label">Description</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" Required name="description"></textarea>
+</div> 
+
+<div class="mb-3">
+<label for="formFile" class="form-label">Image(s) <i>If any</i></label>
+<input class="form-control" type="file" id="formFile" name="image">
+</div>
+<div class="d-grid mb-5">
+<button type="submit" class="btn btn-outline-primary btn-lg"  onclick="alert('Product posted successfully')">Submit</button>
+</div>
+</form>
+            </div>
+        </div>
+    </div>
+    
+
+    {% endblock content %}
+
+

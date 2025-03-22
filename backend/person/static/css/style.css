@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.herosection{
+    background-image: url('../images/ServicesBG.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+
+.herosection h1{
+    text-align: center;
+    color: red;
+    font-size: 40px;
+    padding-top: 200px;
+}
+.herosection p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+}
+
+
+.socials{
+    text-align: center;
+    padding-top: 300px;
+}
+
+
+.socials a i{
+    color: #ffffff;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+.small{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.blognews{
+    background-color: #e5e5e5;
+}
+
+
+.blog{
+    width: 300px;
+    min-height: 100px;
+    text-align: center;
+    color: #592600;
+    background-color: #ffffff;
+    margin-bottom:  20px;
+    margin-left: 50px;
+    margin-top: 50px;
+
+    box-shadow:6px 7px 8px rgba(0,0,0,.7) ;
+}
+
+
+.blog img{
+    width: 100%;
+}
+
+.blog h4{
+    margin:10px;
+    color: orangered;
+}
+.blog p{
+    margin:10px;
+}
+
+.blog button{
+    background-color: #592600;
+    color: rgb(225, 225, 225);
+    width: 90px;
+    height: 35px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.blogs{
+    display: flex;
+    margin: 0 100px;
+}
